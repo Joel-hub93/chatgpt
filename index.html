@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Aurora | Descubre, aprende y comparte</title>
+  <meta name="description" content="Landing page para una biblioteca moderna con catálogo, eventos, servicios y membresías." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Biblioteca Aurora">
+        <span class="brand-icon" aria-hidden="true">📚</span>
+        <span>Biblioteca Aurora</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+        <span class="sr-only">Abrir menú</span>
+        ☰
+      </button>
+      <ul id="main-menu" class="nav-links">
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#membresia">Membresía</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Abierta todos los días · 8:00 a 20:00</p>
+        <h1>Tu próximo gran descubrimiento comienza en la biblioteca.</h1>
+        <p class="hero-copy">Explora miles de libros, espacios de estudio, talleres culturales y recursos digitales pensados para lectores de todas las edades.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#catalogo">Explorar catálogo</a>
+          <a class="button secondary" href="#membresia">Hazte socio gratis</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Resumen de la biblioteca">
+        <div class="card-header">Esta semana</div>
+        <h2>Club de lectura: realismo mágico</h2>
+        <p>Jueves 18:30 · Sala Octavio Paz</p>
+        <div class="stats-grid">
+          <div><strong>45k+</strong><span>títulos</span></div>
+          <div><strong>120</strong><span>eventos/año</span></div>
+          <div><strong>24/7</strong><span>recursos online</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="catalogo" class="section split-section">
+      <div>
+        <p class="eyebrow">Catálogo destacado</p>
+        <h2>Encuentra libros físicos, audiolibros y colecciones digitales.</h2>
+      </div>
+      <div class="search-panel">
+        <label for="book-search">Busca por título, autor o tema</label>
+        <div class="search-box">
+          <input id="book-search" type="search" placeholder="Ej. historia, poesía, ciencia..." />
+          <button type="button">Buscar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-grid" aria-label="Libros recomendados">
+      <article class="book-card">
+        <span class="book-category">Novela</span>
+        <h3>El jardín de las palabras</h3>
+        <p>Una selección para perderse entre historias íntimas y paisajes memorables.</p>
+      </article>
+      <article class="book-card">
+        <span class="book-category">Infantil</span>
+        <h3>Pequeños exploradores</h3>
+        <p>Lecturas ilustradas para despertar curiosidad, imaginación y primeras preguntas.</p>
+      </article>
+      <article class="book-card">
+        <span class="book-category">Ciencia</span>
+        <h3>Ideas que cambiaron el mundo</h3>
+        <p>Ensayos claros para entender tecnología, naturaleza y grandes descubrimientos.</p>
+      </article>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="section-heading">
+        <p class="eyebrow">Servicios</p>
+        <h2>Mucho más que préstamo de libros.</h2>
+      </div>
+      <div class="service-grid">
+        <article><span>💻</span><h3>Recursos digitales</h3><p>Acceso a bases de datos, ebooks, revistas y cursos desde casa.</p></article>
+        <article><span>🧑‍🏫</span><h3>Talleres gratuitos</h3><p>Escritura, investigación, alfabetización digital y actividades infantiles.</p></article>
+        <article><span>☕</span><h3>Espacios cómodos</h3><p>Salas silenciosas, zonas colaborativas, cafetería y wifi de alta velocidad.</p></article>
+      </div>
+    </section>
+
+    <section id="eventos" class="section events">
+      <div class="event-copy">
+        <p class="eyebrow">Agenda cultural</p>
+        <h2>Participa en encuentros que conectan personas e ideas.</h2>
+        <p>Charlas con autores, cuentacuentos, cineclub y laboratorios creativos para construir comunidad alrededor del conocimiento.</p>
+      </div>
+      <div class="event-list">
+        <article><time>12 Ago</time><div><h3>Cuentacuentos familiar</h3><p>Historias para niñas y niños de 4 a 9 años.</p></div></article>
+        <article><time>19 Ago</time><div><h3>Laboratorio de escritura</h3><p>Ejercicios prácticos para empezar tu primer relato.</p></div></article>
+        <article><time>26 Ago</time><div><h3>Noche de poesía local</h3><p>Micrófono abierto para voces de la comunidad.</p></div></article>
+      </div>
+    </section>
+
+    <section id="membresia" class="cta-section">
+      <div>
+        <p class="eyebrow">Membresía gratuita</p>
+        <h2>Obtén tu credencial y reserva libros, salas y actividades en minutos.</h2>
+      </div>
+      <a class="button primary" href="mailto:hola@bibliotecaaurora.example">Solicitar membresía</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Biblioteca Aurora. Leer nos reúne.</p>
+    <p>Av. Lectores 123 · hola@bibliotecaaurora.example</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
